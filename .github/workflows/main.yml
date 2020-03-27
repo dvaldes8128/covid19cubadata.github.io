@@ -20,4 +20,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: make the csv
-      run: python3 https://github.com/dvaldes8128/covid19cubadata-get_csv/blob/master/get_csv.py
+      run: python3 ./data/get_csv.py
