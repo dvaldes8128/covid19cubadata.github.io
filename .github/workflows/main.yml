@@ -1,29 +1,23 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ master ]
-  
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    branches:
+      - master
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  updateGraphs:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8 
-    # Runs a single command using the runners shell
-    - name: my repo
-      uses: dvaldes8128/covid19cubadata.github.io@master
-    - name: make the csv
-      run: python3 data/get_csv.py
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+
+      - name: Generate csv
+        run: python data/get_csv.py
+
+      - name: Update csv
+        run: |
+          git config --global user.name 'dvaldes8128'
+          git config --global user.email 'dvaldes8128@users.noreply.github.com'
+          git commit -am "Update csv"
+          git push
