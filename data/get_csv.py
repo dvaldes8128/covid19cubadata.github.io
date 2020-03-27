@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 
-cov_data=json.load(open("./data/covid19-cuba.json"))
+cov_data=json.load(open("data/covid19-cuba.json"))
 cov_data=cov_data['casos']['dias']
 
 def get_event(_id,field):
@@ -35,4 +35,4 @@ for day,data in cov_data.items() :
             subjects.append(i)
     
 cov_pd=pd.DataFrame(subjects)
-cov_pd.to_csv("./data/covid19-cuba.csv")
+cov_pd.to_csv("data/covid19-cuba.csv")
