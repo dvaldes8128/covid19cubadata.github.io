@@ -283,27 +283,6 @@
                         "posible_procedencia_contagio": [
                             "crucero"
                         ]
-                    },
-                    {
-                        "id": "cu-4",
-                        "pais": "cu",
-                        "edad": 65,
-                        "sexo": "hombre",
-                        "arribo_a_cuba_foco": "2020/03/07",
-                        "consulta_medico": "2020/03/10",
-                        "municipio_detección": "Guanabacoa",
-                        "provincia_detección": "La Habana",
-                        "dpacode_municipio_deteccion": "23.07",
-                        "dpacode_provincia_deteccion": "23",
-                        "provincias_visitadas": [],
-                        "dpacode_provincias_visitadas": [],
-                        "contagio": "introducido",
-                        "contacto_focal": null,
-                        "centro_aislamiento": "ipk",
-                        "centro_diagnostico": "ipk",
-                        "posible_procedencia_contagio": [
-                            "it"
-                        ]
                     }
                 ]
             },
