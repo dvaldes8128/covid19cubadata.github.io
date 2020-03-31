@@ -27,3 +27,5 @@ jobs:
           git add .
           git commit -am "Update csv"
           git push
+      - name: or
+        run: echo {{$GITHUB_WORKSPACE}}
