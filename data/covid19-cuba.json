@@ -129,27 +129,7 @@
             "1": {
                 "fecha": "2020/03/11",
                 "diagnosticados": [
-                    {
-                        "id": "it-1",
-                        "pais": "it",
-                        "edad": 61,
-                        "sexo": "hombre",
-                        "arribo_a_cuba_foco": "2020/03/10",
-                        "consulta_medico": "2020/03/10",
-                        "municipio_detección": "Trinidad",
-                        "provincia_detección": "Sancti Spíritus",
-                        "dpacode_municipio_deteccion": "28.06",
-                        "dpacode_provincia_deteccion": "28",
-                        "provincias_visitadas": [],
-                        "dpacode_provincias_visitadas": [],
-                        "contagio": "importado",
-                        "contacto_focal": null,
-                        "centro_aislamiento": "ipk",
-                        "centro_diagnostico": "ipk",
-                        "posible_procedencia_contagio": [
-                            "it"
-                        ]
-                    },
+           
                     {
                         "id": "it-2",
                         "pais": "it",
